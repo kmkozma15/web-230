@@ -4,7 +4,7 @@
 ; Author: Keith Kozma 
 ; Date:  June 4, 2019
 ; Modified By: N/A
-; Description: This program holds 3 employee personal information and
+; Description: This program holds 3 employees information and
 outputs the result to the console.
 ;===========================================
 */
