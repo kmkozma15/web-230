@@ -3,7 +3,7 @@
 ; Title:  kozma-exercise-2.3.js
 ; Author: Keith Kozma
 ; Date:   13 June 2019
-; Description: This program
+; Description: This program displays a simple statement using functions
 ;===========================================
 */
 
