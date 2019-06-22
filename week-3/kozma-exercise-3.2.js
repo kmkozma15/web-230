@@ -10,7 +10,7 @@ console.log(header.display("Keith" , "Kozma", "Exercise 3.2") + '\n')
 ============================================
 */
 
-// 6 Local Variables
+// 6 Variables
 var test1 = "Truck";
 var test2 = "Car";
 var test3 = "Bike";
