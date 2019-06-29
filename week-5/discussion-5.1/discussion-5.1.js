@@ -1,5 +1,5 @@
 // Header file output
-var header = require("../kozma-header.js")
+var header = require("../../kozma-header")
 console.log(header.display("Keith" , "Kozma", "Discussion 5.1") + '\n');
 /*
     Title:Discussion 5.1
