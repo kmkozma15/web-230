@@ -1,5 +1,5 @@
 /*
-    Title:Discussion 4.1
+    Title:Discussion 6.1
     Author: Keith Kozma
     Date: July 4, 2019
     Description: This is a simple program which utilizes object prototypes to access elements through inheritance.
