@@ -4,8 +4,9 @@ Title: Discussion Board 6.1
        Objects and Built-In Objects
 Author: codecademy.com
   Modified by: Rita
-Date: July 2, 2019
-Description: Find 2 errors
+  Modified by: Keith Kozma
+Date: July 7, 2019
+Description: Found multiple errors
 ==========================================
 */
 
