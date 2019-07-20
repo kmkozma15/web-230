@@ -7,18 +7,8 @@ console.log(header.display("Keith" , "Kozma", "Assignment 6.4") + '\n');
 ; Title: Nested Object Literals
 ; Author: Keith Kozma
 ; Date: 19 July 2019
-; Description: This is a program that utilizes the map() method to filter certain elements within the array collection.
+; Description: This is a program utilizes both get/set methods as well as nested objects to create a trouble ticket which outputs multiple elements.
 ============================================
-*/
-/*
-Expected output:
-
-FirstName LastName
-Assignment 6.4
-Today's Date
-
-Ticket <id> was created on <dateCreated> and assigned to employee <firstName lastName> (<jobTitle>).
-
 */
 
 // start program
