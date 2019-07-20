@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../../site.css">
+
+</head>
+<!--
+============================================
+; Title: Inline JavaScript Functions
+; Author: Keith Kozma
+; Date: 19 July 2019
+; Description: This is an HTML document that uses inline JavaScript functions to output an alert box as well as conformation box when clicking the edit/delete buttons.
+============================================ -->
+<body>
+  <script>
+    document.write(header("Keith", "Kozma", "Exercise 7.4") + '\n')
+  </script>
+  <div id="list">
+    <h1>Computer Components</h1>
+  <table>
+  <thead>
+  <tr>
+  <th>ID</th>
+  <th>NAME</th>
+  <th>AMOUNT</th>
+  <th>FUNCTIONS</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>Laptop</td>
+    <td>1,500.99</td>
+    <td><a href= "javascript:alert('1')">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Motherboard</td>
+    <td>35.70</td>
+    <td><a href= "javascript:alert('2')">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Monitor</td>
+    <td>174.99</td>
+    <td><a href= "javascript:alert('3')">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Mouse</td>
+    <td>13.99</td>
+    <td><a href= "javascript:alert('4')">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Keyboard</td>
+    <td>14.50</td>
+    <td><a href= "javascript:alert('5')">EDIT</a> | <a href="javascript:confirm('Are you sure?')">DELETE</a></td>
+  </tr>
+  </tbody>
+  </table>
+</body>
+</html>
