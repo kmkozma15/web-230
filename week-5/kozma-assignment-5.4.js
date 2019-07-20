@@ -41,11 +41,9 @@ var famousComposers = [
 ];
 
 var composersByRating = famousComposers.map(function(composer) {
-
 });
 
 var composersByGenre = famousComposers.map(function(composer) {
-
 });
 
 console.log("-- COMPOSER BY RATING --");
