@@ -41,22 +41,24 @@ var famousComposers = [
 ];
 
 var composersByRating = famousComposers.map(function(composer) {
+  return "Rating: " + composer.Rating + '\n' + "Composer: " + composer.Composer + '\n';
 });
 
 var composersByGenre = famousComposers.map(function(composer) {
+  return "Genre: " + composer.Genre + '\n' + "Composer: " + composer.Composer + '\n';
 });
 
 console.log("-- COMPOSER BY RATING --");
 
-famousComposers.forEach(function(rating) {
-  console.log("Rating: " + rating.Rating + '\n' + "Composer: " + rating.Composer + '\n');
+composersByRating.forEach(function(rating) {
+  console.log(rating);
 
 });
 
 console.log("-- COMPOSER BY GENRE --");
 
-famousComposers.forEach(function(genre) {
-  console.log("Genre: " + genre.Genre + '\n' + "Composer: " + genre.Composer + '\n');
+composersByGenre.forEach(function(genre) {
+  console.log(genre);
 
 });
 
