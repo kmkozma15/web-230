@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../../site.css">
+</head>
+
+<!--
+============================================
+; Title: Client-Side JavaScript
+; Author: Keith Kozma
+; Date: 19 July 2019
+; Description: This is an HTML document that uses client-side JavaScript to create a simple list with styles provided by the attached css file.
+============================================ -->
+
+<body>
+<script>
+  document.write(header("Keith", "Kozma", "Exercise 7.3") + '\n')
+</script>
+<script>
+  document.write("<h1>SHOPPING LIST v.1</h1>" +
+  "<ol>" +
+    "<li>Oranges</li>" +
+    "<li>Apples</li>" +
+    "<li>Pears</li>" +
+    "<li>Limes</li>" +
+    "<li>Lemons</li>" +
+  "</ol>")
+</script>
+<div id="list">
+<script>
+document.getElementById('list').innerHTML = ("<h1>SHOPPING LIST v.2 </h1>" +
+"<table>" +
+"<thead>" +
+"<tr>" +
+"<th>ID</th>" +
+"<th>ITEM</th>" +
+"</tr>" +
+"</thead>" +
+"<tbody>" +
+"<tr><td>1</td><td>Oranges</td></tr>" +
+"<tr><td>2</td><td>Apples</td></tr>" +
+"<tr><td>3</td><td>Pears</td></tr>" +
+"<tr><td>4</td><td>Limes</td></tr>" +
+"<tr><td>5</td><td>Lemons</td></tr>" +
+"</tbody>" +
+"</table>"
+)
+</script>
+</div>
+
+</body>
+</html>
