@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 7.1</title>
+    <script>
+/*
+============================================
+; Title: Assignment 7.1
+; Author: Justin Singleton
+; Modified By: Keith Kozma (Fixed Errors)
+; Date: 29 July 2019
+; Description: This program demonstrates the
+; use of JavaScript in web browsers and has
+; two mistakes.
+;===========================================
+*/
+      // header
+      const header = require('./singleton-header.js');
+      console.log(header.display("Justin", "Singleton", "Assignment 7.1"));
+      function alertMessage() {
+        alert("Hello, There");
+      } // Added a closing bracket to mark the end of the function. Also added a semi-colon for proper syntax.
+      function alertMessage1() {
+        alert("Hi Friends"); // Replaced the single quote with double quotes
+      }
+    </script>
+  </head>
+  <body>
+      <h1>Click the button for a message.</h1>
+      <button onclick="alertMessage()">Press Here</button>
+      <button onclick="alertMessage1()">Press Here also</button>
+  </body>
+</html>
