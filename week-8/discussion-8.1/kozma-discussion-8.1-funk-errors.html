@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+=======================================================================
+; Title:  Assignment 8.1
+; Author: www.w3schools.com
+; Modified by: Karie Funk
+; Modified by: Keith Kozma (Fixed Errors)
+; Date:   20 July 2019
+; Description: Boxes will fade in and out if errors are corrected.
+;======================================================================
+-->
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){ //Added $ before the button selector to call jQuery
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+    $("#div4").fadeToggle();
+    $("#div5").fadeToggle("slow");
+    $("#div6").fadeToggle(3000);
+  }); //Added closing parentheses after the curly bracket
+});
+</script>
+</head>
+<body>
+<p>Demonstrate fadeToggle() with different speed parameters.</p>
+<button>Click to fade in/out boxes</button><br><br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+<br>
+<div id="div4" style="width:80px;height:80px;background-color:pink;"></div>
+<br>
+<div id="div5" style="width:80px;height:80px;background-color:turquoise;"></div>
+<br>
+<div id="div6" style="width:80px;height:80px;background-color:mediumspringgreen;"></div>
+</body>
+</html>
