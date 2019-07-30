@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+    Title:Discussion 8.1
+    Author: Keith Kozma
+    Date: July 29, 2019
+    Description: A simple HTML document which utilizes querySelectors to manipulate CSS selectors.
+-->
+<html lang="en">
+<head>
+  <title>Discussion 8.1</title>
+  <style>
+    body {
+      background-color: aqua;
+    }
+    li {
+      font-size: 24px;
+    }
+    a {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>jQuery Challenge</h1>
+  <p>Fun with jQuery Selectors!</p>
+  <ul>
+    <li>Jalapeno</li>
+    <li>Avacado</li>
+    <li>Lettuce</li>
+    <li>Cucumber</li>
+    <li>Broccoli</li>
+  </ul>
+<br>
+  <a href="#">Click here to Refresh</a>
+  <ul>
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Pear</li>
+      <li>Grape</li>
+    </ul>
+  <br>
+    <a href="#">Another Refresher</a>
+
+  <script>
+  var x = document.querySelectorAll("li");
+  var i;
+  for (i = 0; i < x.length; i++) {
+  x[i].style.backgroundColor = "pink";
+}
+var link = document.querySelectorAll("a");
+var l;
+for (l = 0; l < link.length; l++) {
+  link[l].style.border = "10px dashed purple";
+}
+  </script>
+</body>
+</html>
