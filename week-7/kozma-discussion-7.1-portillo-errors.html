@@ -1,0 +1,36 @@
+<!---
+============================================
+ Title:  Discussion Board-7.1.js
+ Author: www.digitalocean.com
+ Modified By: Wendy Portillo
+ Modified By: Keith Kozma (Fixed Errors)
+ Date:   July 29, 2019
+ Description: Discussion JavaScript in Web Browser
+===========================================
+--->
+<script type="text/javascript">
+  function display(firstName, lastName, assignment){ //Added a opening bracket to mark the beginning of the function
+    let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+    new Date().toLocaleDateString('en-US')
+    return output
+  }
+  // Outputs the header to the console
+  console.log(display("Wendy", "Portillo", "Exercise 7.1") + '\n');
+  </script>
+  <!DOCTYPE html>
+  <html lang="en-US">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Today's Date</title>
+  </head>
+
+  <body>
+
+    <script>
+        let d = new Date();
+        document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+    </script> <!--Added forward slash at the beginning of the script tag to mark it as the closing tag-->
+  </body>
+  </html>
