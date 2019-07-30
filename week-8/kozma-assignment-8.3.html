@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="/path/to/your/root/css/file">
+
+  <style type="text/css">
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .fruit1 {
+      background-color: red;
+    }
+    .fruit2 {
+      background-color: orange;
+    }
+    .fruit3 {
+      background-color: yellow;
+    }
+    .fruit4 {
+      background-color: green;
+    }
+    .fruit5 {
+      background-color: blue;
+    }
+    .top-bar {
+      background-color: pink;
+      padding: 20px 20px;
+    }
+    table, #paragraph, #toggle{
+      margin-top:20px;
+      margin-left: 20px;
+    }
+    </style>
+
+</head>
+<body>
+
+<div class="top-bar">Assignment 8.3</div>
+
+  <script type="text/javascript">
+  $(document).ready(() => {
+    $('#toggle').on('click', () => {
+      $("p").toggle();
+    });
+  });
+  </script>
+
+<h2>The Lorem Ipsum Story</h2>
+
+<p id="paragraph">Lorem ipsum dolor sit amet consectetur
+  adipisicing elit. Harum vel repellendus cum adipisci amet asperiores, ex sed accusantium nisi
+  deserunt magnam similique itaque perspiciatis, illum ea vitae labore quo odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Corporis architecto suscipit vel voluptatum qui ipsa nobis non at facilis totam vitae excepturi aspernatur,
+  tempore itaque blanditiis dolorum tempora fugit perferendis.Lorem ipsum dolor sit amet consectetur
+  adipisicing elit. Harum vel repellendus cum adipisci amet asperiores, ex sed accusantium nisi
+  deserunt magnam similique itaque perspiciatis, illum ea vitae labore quo odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Corporis architecto suscipit vel voluptatum qui ipsa nobis non at facilis totam vitae excepturi aspernatur,
+  tempore itaque blanditiis dolorum tempora fugit perferendis.</p>
+
+  <button id="toggle">Toggle</button>
+
+  <table>
+    <tr class="fruit1">
+      <td><a href="#" class="fruit">1</a></td><td>Apple</td>
+    </tr>
+    <tr class="fruit2">
+      <td><a href="#" class="fruit">2</a></td><td>Orange</td>
+    </tr>
+    <tr class="fruit3">
+      <td><a href="#" class="fruit">3</a></td><td>Kiwi</td>
+    </tr>
+    <tr class="fruit4">
+      <td><a href="#" class="fruit">4</a></td><td>Plum</td>
+    </tr>
+    <tr class="fruit5">
+      <td><a href="#" class="fruit">5</a></td><td>Pineapple</td>
+    </tr>
+  </table>
+<script>
+  $(function () {
+    $(".fruit").click(function (event) {
+      event.stopPropagation()
+      var label = $(this).label();
+      var newFruit = $(this).closest("td").next().label();
+    })
+  });
+</script>
+</body>
+</html>
