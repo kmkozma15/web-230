@@ -60,9 +60,9 @@ var employees = [
   // Don't remove this, just add your code to the body of the event (curly braces)
   $(function () {
     $("table tr").click(function () {
-      var empid;
-      empid = $(this).find('td:first').html();
-      getEmployee(empid);
+      var emp;
+      emp = $(this).find('td:first').html();
+      getEmployee(emp);
     })
   });
 </script>
